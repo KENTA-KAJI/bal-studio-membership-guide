@@ -32,6 +32,7 @@ const getYouTubeId = (url) => {
 
 const videoId = getYouTubeId(videoUrl)
 const videoShell = document.querySelector('#video-shell')
+const videoSection = document.querySelector('#overview-video')
 
 if (videoId && videoShell) {
   videoShell.innerHTML = `
@@ -44,6 +45,8 @@ if (videoId && videoShell) {
       allowfullscreen
     ></iframe>
   `
+} else if (videoSection) {
+  videoSection.hidden = true
 }
 
 const observer = new IntersectionObserver(
