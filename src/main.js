@@ -1,9 +1,30 @@
 import './style.css'
 
+const shouldResetScroll = !window.location.hash
+
+const resetScrollTop = () => {
+  if (!shouldResetScroll) return
+  window.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+}
+
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual'
 }
-window.scrollTo(0, 0)
+
+resetScrollTop()
+
+document.addEventListener('DOMContentLoaded', () => {
+  resetScrollTop()
+  requestAnimationFrame(resetScrollTop)
+  setTimeout(resetScrollTop, 0)
+  setTimeout(resetScrollTop, 100)
+})
+
+window.addEventListener('load', () => {
+  resetScrollTop()
+  requestAnimationFrame(resetScrollTop)
+  setTimeout(resetScrollTop, 100)
+})
 const checkoutUrl = import.meta.env.VITE_STRIPE_CHECKOUT_URL?.trim()
 const videoUrl = import.meta.env.VITE_BAL_STUDIO_VIDEO_URL?.trim()
 
