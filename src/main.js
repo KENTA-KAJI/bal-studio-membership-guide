@@ -45,6 +45,9 @@ if (videoId && videoShell) {
       allowfullscreen
     ></iframe>
   `
+  if (videoSection) {
+    videoSection.hidden = false
+  }
 } else if (videoSection) {
   videoSection.hidden = true
 }
