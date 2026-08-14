@@ -105,10 +105,10 @@ h3 { font-family: var(--serif); }
 .comparison-card li { position: relative; padding: 13px 0 13px 22px; color: #d3cfc7; border-top: 1px solid rgba(255,255,255,.07); font-size: 14px; line-height: 1.8; }
 .comparison-card li::before { position: absolute; left: 0; color: var(--gold); content: '—'; }
 
-.benefit-grid { gap: 12px; }
-.benefit-grid article { min-height: auto; padding: 18px 20px; background: rgba(255,255,255,.5); border: 1px solid rgba(60,40,10,.14); }
+.benefit-grid { gap: 8px; }
+.benefit-grid article { min-height: auto; padding: 12px 16px; background: rgba(255,255,255,.5); border: 1px solid rgba(60,40,10,.14); }
 .benefit-grid span, .route-grid span { color: #7c5b19; font-size: 11px; font-weight: 700; letter-spacing: .15em; }
-.benefit-grid h3 { margin: 8px 0 0; font-size: 18px; line-height: 1.4; }
+.benefit-grid h3 { margin: 4px 0 0; font-size: 17px; line-height: 1.4; }
 
 .topic-cloud { display: flex; flex-wrap: wrap; gap: 9px; margin: 36px 0; }
 .topic-cloud span { padding: 9px 14px; color: #423a2e; border: 1px solid #c7b689; border-radius: 999px; font-size: 13px; }
@@ -139,7 +139,7 @@ h3 { font-family: var(--serif); }
 .check-list li { position: relative; padding: 20px 10px 20px 38px; border-bottom: 1px solid rgba(200,165,90,.2); color: #e3dfd7; line-height: 1.8; }
 .check-list li::before { position: absolute; left: 8px; color: var(--gold); content: '✓'; }
 
-.price-card { margin-top: 46px; padding: 38px 22px; background: #fff; border: 1px solid #d4bf88; box-shadow: var(--shadow); text-align: center; }
+.price-card { margin-top: 46px; padding: 32px 14px; background: #fff; border: 1px solid #d4bf88; box-shadow: var(--shadow); text-align: center; }
 .price-card__regular { margin: 0 0 16px; color: #b5afa6; font-size: 11.5px; opacity: 0.8; }
 .price-card__regular s { font-size: 13px; color: #a19a90; }
 .price-card__label { display: inline-block; margin: 0; padding: 6px 14px; color: #fff; background: #181613; font-size: 12px; font-weight: 700; letter-spacing: .05em; }
@@ -147,8 +147,8 @@ h3 { font-family: var(--serif); }
 .price-card__price span { font-weight: 700; }
 .price-card__price strong { font: 700 clamp(48px, 16vw, 78px)/1 var(--serif); letter-spacing: -.04em; }
 .price-card__price small { font-size: 12px; }
-.price-card__promise { margin-top: 4px; padding: 26px 12px; background: #f3eee2; border-block: 1px solid #decea6; }
-.price-card__promise strong { font-family: var(--serif); font-size: 17px; line-height: 1.8; }
+.price-card__promise { margin-top: 4px; padding: 20px 10px; background: #f3eee2; border-block: 1px solid #decea6; }
+.price-card__promise strong { font-family: var(--serif); font-size: 16.5px; line-height: 1.8; }
 .price-card__promise p { margin: 12px 0 0; color: #6f685d; font-size: 12px; }
 .terms-label { margin: 25px 0 10px; font-family: var(--serif); font-size: 14px; font-weight: 600; color: #918a80; text-align: left; }
 .terms-list { margin: 0 0 25px; text-align: left; border-top: 1px dashed #decea6; padding-top: 16px; }
@@ -198,7 +198,7 @@ footer a { color: #aaa59c; }
   body { font-size: 14px; line-height: 1.8; letter-spacing: 0.01em; }
   .container { width: min(100% - 32px, 1080px); }
   .section { padding: 74px 0; }
-  .benefit-grid article { padding: 16px; }
+  .benefit-grid article { padding: 10px 14px; }
 }
 
 @media (min-width: 420px) and (max-width: 767px) {
@@ -246,6 +246,8 @@ footer a { color: #aaa59c; }
   .cycle-list li { flex-direction: column; gap: 15px; text-align: center; }
   .cycle-list p { font-size: 14px; }
   .price-card { padding: 52px 70px; }
+  .price-card__promise { padding: 26px 20px; }
+  .price-card__promise strong { font-size: 17.5px; }
   .price-card .button, .price-card .button-note { width: 100%; }
   .application-period { margin: 30px 0; padding: 16px 14px; font-size: 14px; line-height: 1.75; }
   .notice-groups { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
