@@ -154,11 +154,11 @@ h3 { font-family: var(--serif); }
 .terms-list li::before { position: absolute; left: 4px; color: #9b772f; content: '✓'; font-weight: 700; }
 .application-period { margin: 30px 0; padding: 16px 14px; border: 1px solid #cdb77d; font-family: var(--serif); font-size: 14px; line-height: 1.75; }
 
-.notice-groups { display: grid; gap: 18px; margin-top: 34px; }
-.notice-group { padding: 24px 20px; border: 1px solid rgba(200,165,90,.2); background: rgba(255,255,255,.025); }
-.notice-group h3 { margin: 0 0 13px; color: var(--gold-light); font-size: 17px; line-height: 1.7; }
+.notice-groups { display: grid; gap: 20px; margin-top: 38px; }
+.notice-group { padding: 26px 22px; border: 1px solid rgba(200,165,90,.2); background: rgba(255,255,255,.025); }
+.notice-group h3 { margin: 0 0 16px; color: var(--gold-light); font-size: 18px; line-height: 1.6; }
 .notice-list { margin-top: 0; counter-reset: notice; }
-.notice-list li { position: relative; padding: 15px 0 15px 24px; border-bottom: 1px solid rgba(255,255,255,.08); color: #c8c4bc; font-size: 13px; line-height: 1.85; }
+.notice-list li { position: relative; padding: 14px 0 14px 22px; border-bottom: 1px solid rgba(255,255,255,.08); color: #d3cfc7; font-size: 13.5px; line-height: 1.9; }
 .notice-list li:last-child { border-bottom: 0; }
 .notice-list li::before { position: absolute; left: 2px; color: var(--gold); content: '・'; }
 
@@ -230,8 +230,9 @@ footer a { color: #aaa59c; }
   .cycle-list p { font-size: 14px; }
   .price-card { padding: 52px 70px; }
   .price-card .button, .price-card .button-note { width: 100%; }
-  .notice-groups { grid-template-columns: repeat(3, 1fr); gap: 22px; }
-  .notice-group { padding: 30px 34px; }
+  .notice-groups { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
+  .notice-group { padding: 32px 30px; }
+  .notice-list li { padding: 16px 0 16px 24px; font-size: 14px; line-height: 1.95; }
   .mobile-only, .sp-only, .sp-only-br, .sp-heading-break { display: none; }
   .pc-only { display: block; }
   .pc-only-br { display: inline; }
