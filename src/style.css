@@ -42,13 +42,13 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .section-notice { color: #ddd9d0; background: #121110; }
 
 .eyebrow { margin: 0 0 20px; color: var(--gold); font-size: 10px; font-weight: 700; letter-spacing: .18em; }
-h1, h2, h3 { word-break: keep-all; overflow-wrap: normal; }
+h1, h2, h3 { word-break: auto-phrase; overflow-wrap: anywhere; }
 p, li, summary { overflow-wrap: anywhere; }
 h1, h2 { margin: 0; font-family: var(--serif); font-weight: 600; line-height: 1.55; letter-spacing: .015em; }
-h1 { font-size: 30px; }
-h2 { font-size: 27px; }
-h2.long-heading { font-size: 21px; line-height: 1.65; }
-h2.compact-heading { font-size: 24px; line-height: 1.65; }
+h1 { font-size: clamp(26px, 7.5vw, 30px); }
+h2 { font-size: clamp(23px, 6.5vw, 27px); }
+h2.long-heading { font-size: clamp(19px, 5.5vw, 21px); line-height: 1.65; }
+h2.compact-heading { font-size: clamp(21px, 6vw, 24px); line-height: 1.65; }
 h3 { font-family: var(--serif); }
 .section-intro { max-width: 720px; margin: 28px 0 0; color: #cbc8c1; font-size: 15px; line-height: 1.95; }
 .section-intro-group p { margin: 0; }
