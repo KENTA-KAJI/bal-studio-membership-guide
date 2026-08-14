@@ -1,5 +1,9 @@
 import './style.css'
 
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual'
+}
+window.scrollTo(0, 0)
 const checkoutUrl = import.meta.env.VITE_STRIPE_CHECKOUT_URL?.trim()
 const videoUrl = import.meta.env.VITE_BAL_STUDIO_VIDEO_URL?.trim()
 
